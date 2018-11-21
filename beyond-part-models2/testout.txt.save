@@ -1,0 +1,28 @@
+train_pcb.py -dException in thread Thread-5:
+Traceback (most recent call last):
+  File "/scratch/user/bang620/.conda/envs/reID/lib/python2.7/threading.py", line 801, in __bootstrap_inner
+    self.run()
+  File "/scratch/user/bang620/.conda/envs/reID/lib/python2.7/threading.py", line 754, in run
+    self.__target(*self.__args, **self.__kwargs)
+  File "./bpm/dataset/Prefetcher.py", line 107, in enqueue
+    element = self.get_element(ptr - 1)
+  File "./bpm/dataset/TestSet.py", line 58, in get_sample
+    im = np.asarray(Image.open(im_path))
+  File "/scratch/user/bang620/.conda/envs/reID/lib/python2.7/site-packages/PIL/Image.py", line 2609, in open
+    fp = builtins.open(filename, "rb")
+IOError: [Errno 2] No such file or directory: '/scratch/user/bang620/Dataset/market1501/images/00000001_0001_00000008.jpg'
+Exception in thread Thread-6:
+Traceback (most recent call last):
+  File "/scratch/user/bang620/.conda/envs/reID/lib/python2.7/threading.py", line 801, in __bootstrap_inner
+    self.run()
+  File "/scratch/user/bang620/.conda/envs/reID/lib/python2.7/threading.py", line 754, in run
+    self.__target(*self.__args, **self.__kwargs)
+  File "./bpm/dataset/Prefetcher.py", line 107, in enqueue
+    element = self.get_element(ptr - 1)
+  File "./bpm/dataset/TestSet.py", line 58, in get_sample
+    im = np.asarray(Image.open(im_path))
+  File "/scratch/user/bang620/.conda/envs/reID/lib/python2.7/site-packages/PIL/Image.py", line 2609, in open
+    fp = builtins.open(filename, "rb")
+IOError: [Errno 2] No such file or directory: '/scratch/user/bang620/Dataset/market1501/images/00000001_0002_00000005.jpg'
+
+

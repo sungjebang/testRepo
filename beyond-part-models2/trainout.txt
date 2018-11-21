@@ -1,0 +1,178 @@
+------------------------------------------------------------
+cfg.__dict__
+{'ckpt_file': 'exp/train/market1501/run1/ckpt.pth',
+ 'crop_prob': 0,
+ 'crop_ratio': 1,
+ 'dataset': 'market1501',
+ 'epochs_per_val': 1,
+ 'exp_dir': 'exp/train/market1501/run1',
+ 'finetuned_params_lr': 0.01,
+ 'im_mean': [0.486, 0.459, 0.408],
+ 'im_std': [0.229, 0.224, 0.225],
+ 'last_conv_dilation': 1,
+ 'last_conv_stride': 1,
+ 'local_conv_out_channels': 256,
+ 'log_to_file': True,
+ 'model_weight_file': '',
+ 'momentum': 0.9,
+ 'new_params_lr': 0.1,
+ 'num_stripes': 6,
+ 'only_test': False,
+ 'prefetch_threads': 2,
+ 'resize_h_w': (384, 128),
+ 'resume': False,
+ 'run': 1,
+ 'scale_im': True,
+ 'seed': None,
+ 'staircase_decay_at_epochs': (41,),
+ 'staircase_decay_multiply_factor': 0.1,
+ 'stderr_file': 'exp/train/market1501/run1/stderr_2018-11-20_14:58:12.txt',
+ 'stdout_file': 'exp/train/market1501/run1/stdout_2018-11-20_14:58:12.txt',
+ 'steps_per_log': 20,
+ 'sys_device_ids': (0,),
+ 'test_batch_size': 32,
+ 'test_final_batch': True,
+ 'test_mirror_type': None,
+ 'test_set_kwargs': {'batch_dims': 'NCHW',
+                     'batch_size': 32,
+                     'final_batch': True,
+                     'im_mean': [0.486, 0.459, 0.408],
+                     'im_std': [0.229, 0.224, 0.225],
+                     'mirror_type': None,
+                     'name': 'market1501',
+                     'num_prefetch_threads': 2,
+                     'part': 'test',
+                     'prng': <module 'numpy.random' from '/scratch/user/bang620/.conda/envs/reID/lib/python2.7/site-packages/numpy/random/__init__.pyc'>,
+                     'resize_h_w': (384, 128),
+                     'scale': True,
+                     'shuffle': False},
+ 'test_shuffle': False,
+ 'total_epochs': 60,
+ 'train_batch_size': 32,
+ 'train_final_batch': False,
+ 'train_mirror_type': 'random',
+ 'train_set_kwargs': {'batch_dims': 'NCHW',
+                      'batch_size': 32,
+                      'crop_prob': 0,
+                      'crop_ratio': 1,
+                      'final_batch': False,
+                      'im_mean': [0.486, 0.459, 0.408],
+                      'im_std': [0.229, 0.224, 0.225],
+                      'mirror_type': 'random',
+                      'name': 'market1501',
+                      'num_prefetch_threads': 2,
+                      'part': 'trainval',
+                      'prng': <module 'numpy.random' from '/scratch/user/bang620/.conda/envs/reID/lib/python2.7/site-packages/numpy/random/__init__.pyc'>,
+                      'resize_h_w': (384, 128),
+                      'scale': True,
+                      'shuffle': True},
+ 'train_shuffle': True,
+ 'trainset_part': 'trainval',
+ 'val_set_kwargs': {'batch_dims': 'NCHW',
+                    'batch_size': 32,
+                    'final_batch': True,
+                    'im_mean': [0.486, 0.459, 0.408],
+                    'im_std': [0.229, 0.224, 0.225],
+                    'mirror_type': None,
+                    'name': 'market1501',
+                    'num_prefetch_threads': 2,
+                    'part': 'val',
+                    'prng': <module 'numpy.random' from '/scratch/user/bang620/.conda/envs/reID/lib/python2.7/site-packages/numpy/random/__init__.pyc'>,
+                    'resize_h_w': (384, 128),
+                    'scale': True,
+                    'shuffle': False},
+ 'weight_decay': 0.0005}
+------------------------------------------------------------
+----------------------------------------
+market1501 trainval set
+----------------------------------------
+NO. Images: 12936
+NO. IDs: 751
+----------------------------------------
+----------------------------------------
+market1501 val set
+----------------------------------------
+NO. Images: 1666
+NO. IDs: 100
+NO. Query Images: 409
+NO. Gallery Images: 1257
+NO. Multi-query Images: 0
+----------------------------------------
+----------------------------------------
+market1501 test set
+----------------------------------------
+NO. Images: 31969
+NO. IDs: 751
+NO. Query Images: 3368
+NO. Gallery Images: 15913
+NO. Multi-query Images: 12688
+----------------------------------------
+Traceback (most recent call last):
+  File "script/experiment/train_pcb.py", line 499, in <module>
+    main()
+  File "script/experiment/train_pcb.py", line 442, in main
+    loss.backward()
+  File "/scratch/user/bang620/.conda/envs/reID/lib/python2.7	Step 160/Ep 1, 1.93s, loss 31.5685
+	Step 180/Ep 1, 1.93s, loss 29.0955
+	Step 200/Ep 1, 1.93s, loss 30.6162
+	Step 220/Ep 1, 1.93s, loss 29.4013
+	Step 240/Ep 1, 1.93s, loss 31.2128
+	Step 260/Ep 1, 1.93s, loss 29.4050
+	Step 280/Ep 1, 1.93s, loss 29.2387
+	Step 300/Ep 1, 1.93s, loss 24.4935
+	Step 320/Ep 1, 1.93s, loss 23.0176
+	Step 340/Ep 1, 1.93s, loss 27.7944
+	Step 360/Ep 1, 1.93s, loss 27.1848
+	Step 380/Ep 1, 1.93s, loss 26.5307
+	Step 400/Ep 1, 1.93s, loss 23.4012
+Ep 1, 782.42s, loss 30.7155
+
+===== Test on validation set =====
+
+Extracting feature...
+20/53 batches done, +12.72s, total 12.72s
+[F[K40/53 batches done, +12.61s, total 25.33s
+Done, 32.95s
+Computing distance...
+Done, 0.08s
+Computing scores...
+Done, 0.29s
+Single Query:                 [mAP: 77.08%], [cmc1: 86.31%], [cmc5: 94.87%], [cmc10: 96.58%]
+
+	Step 20/Ep 2, 1.94s, loss 24.4973
+	Step 40/Ep 2, 1.94s, loss 22.7426
+	Step 60/Ep 2, 1.93s, loss 19.6764
+	Step 80/Ep 2, 1.94s, loss 18.4591
+	Step 100/Ep 2, 1.93s, loss 20.3680
+	Step 120/Ep 2, 1.93s, loss 20.4185
+	Step 140/Ep 2, 1.94s, loss 23.6334
+	Step 160/Ep 2, 1.93s, loss 21.4429
+	Step 180/Ep 2, 1.93s, loss 25.1143
+	Step 200/Ep 2, 1.93s, loss 20.6261
+	Step 220/Ep 2, 1.93s, loss 20.3297
+	Step 240/Ep 2, 1.93s, loss 20.0393
+	Step 260/Ep 2, 1.93s, loss 16.6434
+	Step 280/Ep 2, 1.94s, loss 16.9199
+	Step 300/Ep 2, 1.93s, loss 18.9650
+	Step 320/Ep 2, 1.94s, loss 20.8325
+	Step 340/Ep 2, 1.93s, loss 19.4851
+	Step 360/Ep 2, 1.93s, loss 18.4700
+	Step 380/Ep 2, 1.93s, loss 14.7727
+	Step 400/Ep 2, 1.94s, loss 18.8101
+Ep 2, 781.12s, loss 19.5664
+
+===== Test on validation set =====
+
+Extracting feature...
+20/53 batches done, +12.66s, total 12.66s
+[F[K40/53 batches done, +12.60s, total 25.26s
+Done, 32.87s
+Computing distance...
+Done, 0.08s
+Computing scores...
+Done, 0.29s
+Single Query:                 [mAP: 84.22%], [cmc1: 91.93%], [cmc5: 97.31%], [cmc10: 98.29%]
+
+	Step 20/Ep 3, 1.93s, loss 12.4679
+	Step 40/Ep 3, 1.93s, loss 17.8871
+	Step 60/Ep 3, 1.93s, loss 14.9223

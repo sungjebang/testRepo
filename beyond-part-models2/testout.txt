@@ -1,0 +1,185 @@
+------------------------------------------------------------
+cfg.__dict__
+{'ckpt_file': 'exp/train/market1501/run1/ckpt.pth',
+ 'crop_prob': 0,
+ 'crop_ratio': 1,
+ 'dataset': 'market1501',
+ 'epochs_per_val': 1,
+ 'exp_dir': 'exp/train/market1501/run1',
+ 'finetuned_params_lr': 0.01,
+ 'im_mean': [0.486, 0.459, 0.408],
+ 'im_std': [0.229, 0.224, 0.225],
+ 'last_conv_dilation': 1,
+ 'last_conv_stride': 1,
+ 'local_conv_out_channels': 256,
+ 'log_to_file': True,
+ 'model_weight_file': '../market1501-data/market1501-w/model_weight.pth',
+ 'momentum': 0.9,
+ 'new_params_lr': 0.1,
+ 'num_stripes': 6,
+ 'only_test': True,
+ 'prefetch_threads': 2,
+ 'resize_h_w': (384, 128),
+ 'resume': False,
+ 'run': 1,
+ 'scale_im': True,
+ 'seed': None,
+ 'staircase_decay_at_epochs': (41,),
+ 'staircase_decay_multiply_factor': 0.1,
+ 'stderr_file': 'exp/train/market1501/run1/stderr_2018-11-16_21:28:38.txt',
+ 'stdout_file': 'exp/train/market1501/run1/stdout_2018-11-16_21:28:38.txt',
+ 'steps_per_log': 20,
+ 'sys_device_ids': (0,),
+ 'test_batch_size': 32,
+ 'test_final_batch': True,
+ 'test_mirror_type': None,
+ 'test_set_kwargs': {'batch_dims': 'NCHW',
+                     'batch_size': 32,
+                     'final_batch': True,
+                     'im_mean': [0.486, 0.459, 0.408],
+                     'im_std': [0.229, 0.224, 0.225],
+                     'mirror_type': None,
+                     'name': 'market1501',
+                     'num_prefetch_threads': 2,
+                     'part': 'test',
+                     'prng': <module 'numpy.random' from '/scratch/user/bang620/.conda/envs/reID/lib/python2.7/site-packages/numpy/random/__init__.pyc'>,
+                     'resize_h_w': (384, 128),
+                     'scale': True,
+                     'shuffle': False},
+ 'test_shuffle': False,
+ 'total_epochs': 60,
+ 'train_batch_size': 64,
+ 'train_final_batch': False,
+ 'train_mirror_type': 'random',
+ 'train_set_kwargs': {'batch_dims': 'NCHW',
+                      'batch_size': 64,
+                      'crop_prob': 0,
+                      'crop_ratio': 1,
+                      'final_batch': False,
+                      'im_mean': [0.486, 0.459, 0.408],
+                      'im_std': [0.229, 0.224, 0.225],
+                      'mirror_type': 'random',
+                      'name': 'market1501',
+                      'num_prefetch_threads': 2,
+                      'part': 'trainval',
+                      'prng': <module 'numpy.random' from '/scratch/user/bang620/.conda/envs/reID/lib/python2.7/site-packages/numpy/random/__init__.pyc'>,
+                      'resize_h_w': (384, 128),
+                      'scale': True,
+                      'shuffle': True},
+ 'train_shuffle': True,
+ 'trainset_part': 'trainval',
+ 'val_set_kwargs': {'batch_dims': 'NCHW',
+                    'batch_size': 32,
+                    'final_batch': True,
+                    'im_mean': [0.486, 0.459, 0.408],
+                    'im_std': [0.229, 0.224, 0.225],
+                    'mirror_type': None,
+                    'name': 'market1501',
+                    'num_prefetch_threads': 2,
+                    'part': 'val',
+                    'prng': <module 'numpy.random' from '/scratch/user/bang620/.conda/envs/reID/lib/python2.7/site-packages/numpy/random/__init__.pyc'>,
+                    'resize_h_w': (384, 128),
+                    'scale': True,
+                    'shuffle': False},
+ 'weight_decay': 0.0005}
+------------------------------------------------------------
+----------------------------------------
+market1501 trainval set
+----------------------------------------
+NO. Images: 12936
+NO. IDs: 751
+----------------------------------------
+----------------------------------------
+market1501 val set
+----------------------------------------
+NO. Images: 1666
+NO. IDs: 100
+NO. Query Images: 409
+NO. Gallery Images: 1257
+NO. Multi-query Images: 0
+----------------------------------------
+----------------------------------------
+market1501 test set
+----------------------------------------
+NO. Images: 31969
+NO. IDs: 751
+NO. Query Images: 3368
+NO. Gallery Images: 15913
+NO. Multi-query Images: 12688
+----------------------------------------
+Loaded model weights from ../market1501-data/market1501-w/model_weight.pth
+
+=========> Test on dataset: market1501 <=========
+
+Extracting feature...
+20/1000 batches done, +14.22s, total 14.22s
+[F[K40/1000 batches done, +12.25s, total 26.48s
+[F[K60/1000 batches done, +12.26s, total 38.74s
+[F[K80/1000 batches done, +12.26s, total 51.00s
+[F[K100/1000 batches done, +12.26s, total 63.26s
+[F[K120/1000 batches done, +12.26s, total 75.52s
+[F[K140/1000 batches done, +12.26s, total 87.77s
+[F[K160/1000 batches done, +12.26s, total 100.03s
+[F[K180/1000 batches done, +12.26s, total 112.29s
+[F[K200/1000 batches done, +12.26s, total 124.55s
+[F[K220/1000 batches done, +12.26s, total 136.81s
+[F[K240/1000 batches done, +12.26s, total 149.06s
+[F[K260/1000 batches done, +12.26s, total 161.32s
+[F[K280/1000 batches done, +12.25s, total 173.57s
+[F[K300/1000 batches done, +12.25s, total 185.83s
+[F[K320/1000 batches done, +12.25s, total 198.08s
+[F[K340/1000 batches done, +12.26s, total 210.34s
+[F[K360/1000 batches done, +12.26s, total 222.59s
+[F[K380/1000 batches done, +12.26s, total 234.85s
+[F[K400/1000 batches done, +12.26s, total 247.11s
+[F[K420/1000 batches done, +12.27s, total 259.37s
+[F[K440/1000 batches done, +12.26s, total 271.63s
+[F[K460/1000 batches done, +12.26s, total 283.90s
+[F[K480/1000 batches done, +12.26s, total 296.15s
+[F[K500/1000 batches done, +12.26s, total 308.41s
+[F[K520/1000 batches done, +12.26s, total 320.68s
+[F[K540/1000 batches done, +12.26s, total 332.93s
+[F[K560/1000 batches done, +12.26s, total 345.19s
+[F[K580/1000 batches done, +12.26s, total 357.46s
+[F[K600/1000 batches done, +12.25s, total 369.71s
+[F[K620/1000 batches done, +12.26s, total 381.97s
+[F[K640/1000 batches done, +12.26s, total 394.23s
+[F[K660/1000 batches done, +12.26s, total 406.48s
+[F[K680/1000 batches done, +12.26s, total 418.75s
+[F[K700/1000 batches done, +12.26s, total 431.00s
+[F[K720/1000 batches done, +12.26s, total 443.26s
+[F[K740/1000 batches done, +12.25s, total 455.52s
+[F[K760/1000 batches done, +12.26s, total 467.78s
+[F[K780/1000 batches done, +12.26s, total 480.04s
+[F[K800/1000 batches done, +12.26s, total 492.30s
+[F[K820/1000 batches done, +12.27s, total 504.56s
+[F[K840/1000 batches done, +12.27s, total 516.83s
+[F[K860/1000 batches done, +12.26s, total 529.09s
+[F[K880/1000 batches done, +12.27s, total 541.36s
+[F[K900/1000 batches done, +12.27s, total 553.63s
+[F[K920/1000 batches done, +12.26s, total 565.88s
+[F[K940/1000 batches done, +12.23s, total 578.12s
+[F[K960/1000 batches done, +12.22s, total 590.34s
+[F[K980/1000 batches done, +12.27s, total 602.61s
+[F[K1000/1000 batches done, +11.68s, total 614.29s
+Done, 614.52s
+Computing distance...
+Done, 7.78s
+Computing scores...
+Done, 16.72s
+Single Query:                 [mAP: 78.54%], [cmc1: 92.87%], [cmc5: 96.88%], [cmc10: 98.07%]
+Multi Query, Computing distance...
+Done, 7.78s
+Multi Query, Computing scores...
+Done, 16.65s
+Multi Query:                  [mAP: 84.68%], [cmc1: 95.10%], [cmc5: 98.04%], [cmc10: 98.75%]
+Re-ranking distance...
+Done, 114.71s
+Computing scores for re-ranked distance...
+Done, 17.17s
+Re-ranked Single Query:       [mAP: 90.17%], [cmc1: 93.94%], [cmc5: 96.62%], [cmc10: 97.24%]
+Multi Query, Re-ranking distance...
+Done, 75.37s
+Multi Query, Computing scores for re-ranked distance...
+Done, 17.15s
+Re-ranked Multi Query:        [mAP: 93.02%], [cmc1: 95.81%], [cmc5: 97.62%], [cmc10: 98.07%]

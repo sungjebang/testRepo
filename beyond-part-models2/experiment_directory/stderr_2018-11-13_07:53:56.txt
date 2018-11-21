@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "script/experiment/visualize_rank_list.py", line 281, in <module>
+    main()
+  File "script/experiment/visualize_rank_list.py", line 191, in main
+    test_set = create_dataset(**cfg.test_set_kwargs)
+  File "./bpm/dataset/__init__.py", line 54, in create_dataset
+    partitions = load_pickle(partition_file)
+  File "./bpm/utils/utils.py", line 24, in load_pickle
+    assert osp.exists(path)
+AssertionError
